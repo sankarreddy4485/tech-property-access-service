@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: tech-property-access-service
+  cloud:
+    config:
+      enabled: false
+  profiles:
+    active: dev 
+  
+    
+server:
+  port: 8100
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh 
+        
